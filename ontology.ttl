@@ -1,27 +1,24 @@
-@prefix : <https://w3id.org/MQIO-metrics/#> .
+@prefix : <https://www.w3id.org/MQIO-metrics/#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/MQIO-metrics/#> .
+@base <https://www.w3id.org/MQIO-metrics/#> .
 
-<https://w3id.org/MQIO-metrics/#> rdf:type owl:Ontology ;
-                                   <http://purl.org/dc/terms/abstract> "The Mapping Quality Improvement Ontology (MQIO) metrics represent the mapping quality metrics associated with MQIO." ;
-                                   <http://purl.org/dc/terms/created> "8 August 2021" ;
-                                   <http://purl.org/dc/terms/license> "http://creativecommons.org/publicdomain/zero/1.0/" ;
-                                   <http://purl.org/dc/terms/title> "Mapping Quality Improvement Ontology Metrics" ;
-                                   <http://purl.org/ontology/bibo/status> "Draft" ;
-                                   <http://purl.org/vocab/vann/preferredNamespacePrefix> "mqio-metric" ;
-                                   <http://purl.org/vocab/vann/preferredNamespaceUri> "<https://w3id.org/MQIO-metrics/#>" .
+<https://www.w3id.org/MQIO-metrics/#> rdf:type owl:Ontology ;
+                                       <http://purl.org/dc/terms/abstract> "The Mapping Quality Improvement Ontology (MQIO) metrics represent the mapping quality metrics associated with MQIO. This ontology is licensed under the Attribution (CC BY) License." ;
+                                       <http://purl.org/dc/terms/created> "01 May 2023" ;
+                                       <http://purl.org/dc/terms/license> <http://creativecommons.org/publicdomain/zero/1.0/> ;
+                                       <http://purl.org/dc/terms/title> "Mapping Quality Improvement Ontology Metrics" ;
+                                       <http://purl.org/ontology/bibo/status> "Draft" ;
+                                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "mqio-metric:" ;
+                                       <http://purl.org/vocab/vann/preferredNamespaceUri> "https://www.w3id.org/MQIO-metrics/#" ;
+                                       owl:versionInfo "v1.1" .
 
 #################################################################
 #    Annotation properties
 #################################################################
-
-###  http://purl.1122org/ontology/bibo/status
-<http://purl.1122org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
-
 
 ###  http://purl.org/dc/terms/abstract
 <http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
@@ -75,29 +72,29 @@
 <http://www.w3.org/ns/dqv#Metric> rdf:type owl:Class .
 
 
-###  https://w3id.org/MQIO-metrics/#Accessibility
+###  https://www.w3id.org/MQIO-metrics/#Accessibility
 :Accessibility rdf:type owl:Class ;
                rdfs:subClassOf <http://www.w3.org/ns/dqv#Category> ;
                rdfs:comment "The accessibility category groups dimensions and metrics related to the access, authenticity and retrieval of data "@en ;
                rdfs:label "Accessibility"@en .
 
 
-###  https://w3id.org/MQIO-metrics/#Availability
+###  https://www.w3id.org/MQIO-metrics/#Availability
 :Availability rdf:type owl:Class ;
               rdfs:subClassOf <http://www.w3.org/ns/dqv#Dimension> ;
-              rdfs:comment "Availability of a dataset <http://www.w3.org/ns/dqv#Metric>is the extent to which data (or some portion of it) is present, obtainable and ready for use."@en ;
+              rdfs:comment "Availability of a dataset is the extent to which data (or some portion of it) is present, obtainable and ready for use."@en ;
               rdfs:label "Availability"@en ;
               <http://www.w3.org/ns/dqv#inCategory> :Accessibility .
 
 
-###  https://w3id.org/MQIO-metrics/#Contextual
+###  https://www.w3id.org/MQIO-metrics/#Contextual
 :Contextual rdf:type owl:Class ;
             rdfs:subClassOf <http://www.w3.org/ns/dqv#Category> ;
             rdfs:comment "The contextual category groups dimensions and  metrics  highly  depend on  the  context  of the task  at hand."@en ;
             rdfs:label "Contextual"@en .
 
 
-###  https://w3id.org/MQIO-metrics/#D1
+###  https://www.w3id.org/MQIO-metrics/#D1
 :D1 rdf:type owl:Class ;
     rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
     rdfs:comment "Classes are considered undefined when it is not possible to dereference them against their namespace."@en ;
@@ -106,7 +103,7 @@
     <http://www.w3.org/ns/dqv#inDimension> :Interpretability .
 
 
-###  https://w3id.org/MQIO-metrics/#D2
+###  https://www.w3id.org/MQIO-metrics/#D2
 :D2 rdf:type owl:Class ;
     rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
     rdfs:comment "Properties are considered undefined when it is not possible to dereference them against their namespace."@en ;
@@ -115,7 +112,7 @@
     <http://www.w3.org/ns/dqv#inDimension> :Interpretability .
 
 
-###  https://w3id.org/MQIO-metrics/#D3
+###  https://www.w3id.org/MQIO-metrics/#D3
 :D3 rdf:type owl:Class ;
     rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
     rdfs:comment "The class type defined in the subject map does not  include the domain for this property."@en ;
@@ -124,7 +121,7 @@
     <http://www.w3.org/ns/dqv#inDimension> :DataConsistency .
 
 
-###  https://w3id.org/MQIO-metrics/#D4
+###  https://www.w3id.org/MQIO-metrics/#D4
 :D4 rdf:type owl:Class ;
     rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
     rdfs:comment "The use of query parameters is not parameters in recommended by the W3C best practices for URIs."@en ;
@@ -133,7 +130,7 @@
     <http://www.w3.org/ns/dqv#inDimension> :RepresentationalConciseness .
 
 
-###  https://w3id.org/MQIO-metrics/#D5
+###  https://www.w3id.org/MQIO-metrics/#D5
 :D5 rdf:type owl:Class ;
     rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
     rdfs:comment "Individuals of one class cannot be simultaneously members of another class."@en ;
@@ -142,7 +139,7 @@
     <http://www.w3.org/ns/dqv#inDimension> :DataConsistency .
 
 
-###  https://w3id.org/MQIO-metrics/#D6
+###  https://www.w3id.org/MQIO-metrics/#D6
 :D6 rdf:type owl:Class ;
     rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
     rdfs:comment "The term type for this property does not match the range. If the range is a Literal, the term type should be a Literal, otherwise IRI."@en ;
@@ -151,7 +148,7 @@
     <http://www.w3.org/ns/dqv#inDimension> :DataConsistency .
 
 
-###  https://w3id.org/MQIO-metrics/#D7
+###  https://www.w3id.org/MQIO-metrics/#D7
 :D7 rdf:type owl:Class ;
     rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
     rdfs:comment "The datatype assigned to the object does not match the datatype range for this property."@en ;
@@ -160,7 +157,7 @@
     <http://www.w3.org/ns/dqv#inDimension> :DataConsistency .
 
 
-###  https://w3id.org/MQIO-metrics/#DataConsistency
+###  https://www.w3id.org/MQIO-metrics/#DataConsistency
 :DataConsistency rdf:type owl:Class ;
                  rdfs:subClassOf <http://www.w3.org/ns/dqv#Dimension> ;
                  rdfs:comment "Data Consistency is the extent to which a dataset will be generated with no conflicting information."@en ;
@@ -168,7 +165,7 @@
                  <http://www.w3.org/ns/dqv#inCategory> :Intrinsic .
 
 
-###  https://w3id.org/MQIO-metrics/#Interpretability
+###  https://www.w3id.org/MQIO-metrics/#Interpretability
 :Interpretability rdf:type owl:Class ;
                   rdfs:subClassOf <http://www.w3.org/ns/dqv#Dimension> ;
                   rdfs:comment "Interpretability is concerned to information being represented in an appropriate notation, and whether it is machine-processable."@en ;
@@ -176,14 +173,14 @@
                   <http://www.w3.org/ns/dqv#inCategory> :Representational .
 
 
-###  https://w3id.org/MQIO-metrics/#Intrinsic
+###  https://www.w3id.org/MQIO-metrics/#Intrinsic
 :Intrinsic rdf:type owl:Class ;
            rdfs:subClassOf <http://www.w3.org/ns/dqv#Category> ;
            rdfs:comment "Intrinsic category contains the dimensions that are independent of the user’s context."@en ;
            rdfs:label "Intrinsic"@en .
 
 
-###  https://w3id.org/MQIO-metrics/#Licensing
+###  https://www.w3id.org/MQIO-metrics/#Licensing
 :Licensing rdf:type owl:Class ;
            rdfs:subClassOf <http://www.w3.org/ns/dqv#Dimension> ;
            rdfs:comment "Licensing refers to the license under which a mapping and its resulting dataset can be (re) used."@en ;
@@ -191,79 +188,115 @@
            <http://www.w3.org/ns/dqv#inCategory> :Accessibility .
 
 
-###  https://w3id.org/MQIO-metrics/#MP1
+###  https://www.w3id.org/MQIO-metrics/#MP1
 :MP1 rdf:type owl:Class ;
      rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
-     rdfs:comment "Objects maps with literal values may refer to only one datatype and no language tags."@en ;
+     rdfs:comment "A logical table exist and references either a table (or view) or an SQL query"@en ;
      rdfs:isDefinedBy <https://w3id.org/MQIO-metrics/#> ;
      rdfs:label "MP1"@en ;
      <http://www.w3.org/ns/dqv#inDimension> :MappingConsistency .
 
 
-###  https://w3id.org/MQIO-metrics/#MP2
+###  https://www.w3id.org/MQIO-metrics/#MP10
+:MP10 rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
+      rdfs:comment "The datatype definition is a valid URI. In R2RML, this would involve validating object maps associated with datatypes"@en ;
+      rdfs:isDefinedBy <https://w3id.org/MQIO-metrics/#> ;
+      rdfs:label "MP10"@en ;
+      <http://www.w3.org/ns/dqv#inDimension> :SyntacticValidity .
+
+
+###  https://www.w3id.org/MQIO-metrics/#MP11
+:MP11 rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
+      rdfs:comment "Valid language tags are defined as per RFC 5646 (BCP 47)."@en ;
+      rdfs:isDefinedBy <https://w3id.org/MQIO-metrics/#> ;
+      rdfs:label "MP11"@en ;
+      <http://www.w3.org/ns/dqv#inDimension> :SyntacticValidity .
+
+
+###  https://www.w3id.org/MQIO-metrics/#MP12
+:MP12 rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
+      rdfs:comment "Mappings which generate the same triple more than once."@en ;
+      rdfs:isDefinedBy <https://w3id.org/MQIO-metrics/#> ;
+      rdfs:label "MP12"@en ;
+      <http://www.w3.org/ns/dqv#inDimension> :RepresentationalConciseness .
+
+
+###  https://www.w3id.org/MQIO-metrics/#MP2
 :MP2 rdf:type owl:Class ;
      rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
-     rdfs:comment "The term type for a Subject map must be an rr:IRI or an rr:BlankNode."@en ;
+     rdfs:comment "One subject map, which may have zero or more class definitions."@en ;
      rdfs:isDefinedBy <https://w3id.org/MQIO-metrics/#> ;
      rdfs:label "MP2"@en ;
      <http://www.w3.org/ns/dqv#inDimension> :MappingConsistency .
 
 
-###  https://w3id.org/MQIO-metrics/#MP3
+###  https://www.w3id.org/MQIO-metrics/#MP3
 :MP3 rdf:type owl:Class ;
      rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
-     rdfs:comment "The term type for a Predicate map must an rr:IRI."@en ;
+     rdfs:comment "There must exist at least one predicate map and one object map. These are used to generate the predicates and objects of the triples."@en ;
      rdfs:isDefinedBy <https://w3id.org/MQIO-metrics/#> ;
      rdfs:label "MP3"@en ;
      <http://www.w3.org/ns/dqv#inDimension> :MappingConsistency .
 
 
-###  https://w3id.org/MQIO-metrics/#MP4
+###  https://www.w3id.org/MQIO-metrics/#MP4
 :MP4 rdf:type owl:Class ;
      rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
-     rdfs:comment "The term type for an object map must be an rr:IRI, rr:Literal or a rr:BlankNode."@en ;
+     rdfs:comment "The triples map being referenced must exist in the mapping and, when defined, join conditions must have both parent and child column definition."@en ;
      rdfs:isDefinedBy <https://w3id.org/MQIO-metrics/#> ;
      rdfs:label "MP4"@en ;
      <http://www.w3.org/ns/dqv#inDimension> :MappingConsistency .
 
 
-###  https://w3id.org/MQIO-metrics/#MP5
+###  https://www.w3id.org/MQIO-metrics/#MP5
 :MP5 rdf:type owl:Class ;
      rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
-     rdfs:comment "Subject definitions must be valid URIs unless its type is defined as blank node."@en ;
+     rdfs:comment "Object maps with literal values may refer to only one language tag or one datatype definition (not both)."@en ;
      rdfs:isDefinedBy <https://w3id.org/MQIO-metrics/#> ;
      rdfs:label "MP5"@en ;
      <http://www.w3.org/ns/dqv#inDimension> :MappingConsistency .
 
 
-###  https://w3id.org/MQIO-metrics/#MP6
+###  https://www.w3id.org/MQIO-metrics/#MP6
 :MP6 rdf:type owl:Class ;
      rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
-     rdfs:comment "Valid language tags are defined as per RFC 5646 (BCP 47)."@en ;
+     rdfs:comment "Terms maps are assigned the correct term types. Subject maps may be IRIs or blank nodes, predicate maps must be IRIs, and object maps may be IRIs, blank nodes, or literal."@en ;
      rdfs:isDefinedBy <https://w3id.org/MQIO-metrics/#> ;
      rdfs:label "MP6"@en ;
      <http://www.w3.org/ns/dqv#inDimension> :MappingConsistency .
 
 
-###  https://w3id.org/MQIO-metrics/#MP7
+###  https://www.w3id.org/MQIO-metrics/#MP7
 :MP7 rdf:type owl:Class ;
      rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
-     rdfs:comment "A join condition must have a child column."@en ;
+     rdfs:comment "Subject definitions must be valid URIs unless its type is defined as blank node."@en ;
      rdfs:isDefinedBy <https://w3id.org/MQIO-metrics/#> ;
      rdfs:label "MP7"@en ;
-     <http://www.w3.org/ns/dqv#inDimension> :MappingConsistency .
+     <http://www.w3.org/ns/dqv#inDimension> :SyntacticValidity .
 
 
-###  https://w3id.org/MQIO-metrics/#MP8
+###  https://www.w3id.org/MQIO-metrics/#MP8
 :MP8 rdf:type owl:Class ;
      rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
-     rdfs:comment "A join condition must have a parent column."@en ;
+     rdfs:comment "The predicate definition is a valid URI."@en ;
      rdfs:isDefinedBy <https://w3id.org/MQIO-metrics/#> ;
      rdfs:label "MP8"@en ;
-     <http://www.w3.org/ns/dqv#inDimension> :MappingConsistency .
+     <http://www.w3.org/ns/dqv#inDimension> :SyntacticValidity .
 
 
-###  https://w3id.org/MQIO-metrics/#MappingConsistency
+###  https://www.w3id.org/MQIO-metrics/#MP9
+:MP9 rdf:type owl:Class ;
+     rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
+     rdfs:comment "The named graph definition is a valid URI."@en ;
+     rdfs:isDefinedBy <https://w3id.org/MQIO-metrics/#> ;
+     rdfs:label "MP9"@en ;
+     <http://www.w3.org/ns/dqv#inDimension> :SyntacticValidity .
+
+
+###  https://www.w3id.org/MQIO-metrics/#MappingConsistency
 :MappingConsistency rdf:type owl:Class ;
                     rdfs:subClassOf <http://www.w3.org/ns/dqv#Dimension> ;
                     rdfs:comment "Mapping Consistency is the extent to which a mapping is conformant to its mapping language."@en ;
@@ -271,14 +304,14 @@
                     <http://www.w3.org/ns/dqv#inCategory> :Intrinsic .
 
 
-###  https://w3id.org/MQIO-metrics/#Representational
+###  https://www.w3id.org/MQIO-metrics/#Representational
 :Representational rdf:type owl:Class ;
                   rdfs:subClassOf <http://www.w3.org/ns/dqv#Category> ;
                   rdfs:comment "Representational category is concerned  with the  design  of  the data."@en ;
                   rdfs:label "Representational"@en .
 
 
-###  https://w3id.org/MQIO-metrics/#RepresentationalConciseness
+###  https://www.w3id.org/MQIO-metrics/#RepresentationalConciseness
 :RepresentationalConciseness rdf:type owl:Class ;
                              rdfs:subClassOf <http://www.w3.org/ns/dqv#Dimension> ;
                              rdfs:comment "Representational conciseness refers to the representational of the resulting dataset being compact, well-formatted, and clear."@en ;
@@ -286,7 +319,15 @@
                              <http://www.w3.org/ns/dqv#inCategory> :Representational .
 
 
-###  https://w3id.org/MQIO-metrics/#Trustworthiness
+###  https://www.w3id.org/MQIO-metrics/#SyntacticValidity
+:SyntacticValidity rdf:type owl:Class ;
+                   rdfs:subClassOf <http://www.w3.org/ns/dqv#Dimension> ;
+                   rdfs:comment "The conformance of an RDF graph with the RDF standard."@en ;
+                   rdfs:label "SyntacticValidity"@en ;
+                   <http://www.w3.org/ns/dqv#inCategory> :Intrinsic .
+
+
+###  https://www.w3id.org/MQIO-metrics/#Trustworthiness
 :Trustworthiness rdf:type owl:Class ;
                  rdfs:subClassOf <http://www.w3.org/ns/dqv#Dimension> ;
                  rdfs:comment "Trustworthiness is the extent to which data producers involved in the mapping process believe that the information in those mappings is 'true'."@en ;
@@ -294,7 +335,7 @@
                  <http://www.w3.org/ns/dqv#inCategory> :Contextual .
 
 
-###  https://w3id.org/MQIO-metrics/#Understandability
+###  https://www.w3id.org/MQIO-metrics/#Understandability
 :Understandability rdf:type owl:Class ;
                    rdfs:subClassOf <http://www.w3.org/ns/dqv#Dimension> ;
                    rdfs:comment "Understandability is concerned with human-readable information being provided to mappings and the resources being generated such that data producers and consumers are able to understand them."@en ;
@@ -302,7 +343,7 @@
                    <http://www.w3.org/ns/dqv#inCategory> :Contextual .
 
 
-###  https://w3id.org/MQIO-metrics/#VOC1
+###  https://www.w3id.org/MQIO-metrics/#VOC1
 :VOC1 rdf:type owl:Class ;
       rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
       rdfs:comment "Humans consuming the information should be able to understand the Linked Data Resource."@en ;
@@ -311,40 +352,40 @@
       <http://www.w3.org/ns/dqv#inDimension> :Understandability .
 
 
-###  https://w3id.org/MQIO-metrics/#VOC2
+###  https://www.w3id.org/MQIO-metrics/#VOC2
 :VOC2 rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
+      rdfs:comment "A property should have a range and/or domain definition."@en ;
+      rdfs:isDefinedBy <https://w3id.org/MQIO-metrics/#> ;
+      rdfs:label "VOC2"@en ;
+      <http://www.w3.org/ns/dqv#inDimension> :Understandability .
+
+
+###  https://www.w3id.org/MQIO-metrics/#VOC3
+:VOC3 rdf:type owl:Class ;
       rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
       rdfs:comment "Consumers need to understand where the data has originated."@en ;
       rdfs:isDefinedBy <https://w3id.org/MQIO-metrics/#> ;
-      rdfs:label "VOC2"@en ;
+      rdfs:label "VOC3"@en ;
       <http://www.w3.org/ns/dqv#inDimension> :Trustworthiness .
 
 
-###  https://w3id.org/MQIO-metrics/#VOC3
-:VOC3 rdf:type owl:Class ;
-      rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
-      rdfs:comment "Allows the licensing information to be queried by machines."@en ;
-      rdfs:isDefinedBy <https://w3id.org/MQIO-metrics/#> ;
-      rdfs:label "VOC3"@en ;
-      <http://www.w3.org/ns/dqv#inDimension> :Licensing .
-
-
-###  https://w3id.org/MQIO-metrics/#VOC4
+###  https://www.w3id.org/MQIO-metrics/#VOC4
 :VOC4 rdf:type owl:Class ;
       rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
-      rdfs:comment "Allows humans to read and understand license in a textual format."@en ;
+      rdfs:comment "Allows the licensing information to be queried by machines."@en ;
       rdfs:isDefinedBy <https://w3id.org/MQIO-metrics/#> ;
       rdfs:label "VOC4"@en ;
       <http://www.w3.org/ns/dqv#inDimension> :Licensing .
 
 
-###  https://w3id.org/MQIO-metrics/#VOC5
+###  https://www.w3id.org/MQIO-metrics/#VOC5
 :VOC5 rdf:type owl:Class ;
       rdfs:subClassOf <http://www.w3.org/ns/dqv#Metric> ;
-      rdfs:comment "Ensuring the resources are retrievable is one of the main principles of Linked Data."@en ;
+      rdfs:comment "Allows humans to read and understand license in a textual format."@en ;
       rdfs:isDefinedBy <https://w3id.org/MQIO-metrics/#> ;
       rdfs:label "VOC5"@en ;
-      <http://www.w3.org/ns/dqv#inDimension> :Availability .
+      <http://www.w3.org/ns/dqv#inDimension> :Licensing .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

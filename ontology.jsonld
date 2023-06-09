@@ -1,7 +1,4 @@
 [ {
-  "@id" : "http://purl.1122org/ontology/bibo/status",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://purl.org/dc/terms/abstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -38,16 +35,16 @@
   "@id" : "http://www.w3.org/ns/dqv#inDimension",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/abstract" : [ {
-    "@value" : "The Mapping Quality Improvement Ontology (MQIO) metrics represent the mapping quality metrics associated with MQIO."
+    "@value" : "The Mapping Quality Improvement Ontology (MQIO) metrics represent the mapping quality metrics associated with MQIO. This ontology is licensed under the Attribution (CC BY) License."
   } ],
   "http://purl.org/dc/terms/created" : [ {
-    "@value" : "8 August 2021"
+    "@value" : "01 May 2023"
   } ],
   "http://purl.org/dc/terms/license" : [ {
-    "@value" : "http://creativecommons.org/publicdomain/zero/1.0/"
+    "@id" : "http://creativecommons.org/publicdomain/zero/1.0/"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "Mapping Quality Improvement Ontology Metrics"
@@ -56,13 +53,16 @@
     "@value" : "Draft"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
-    "@value" : "mqio-metric"
+    "@value" : "mqio-metric:"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@value" : "<https://w3id.org/MQIO-metrics/#>"
+    "@value" : "https://www.w3id.org/MQIO-metrics/#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "v1.1"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#Accessibility",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#Accessibility",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -76,11 +76,11 @@
     "@id" : "http://www.w3.org/ns/dqv#Category"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#Availability",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#Availability",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Availability of a dataset <http://www.w3.org/ns/dqv#Metric>is the extent to which data (or some portion of it) is present, obtainable and ready for use."
+    "@value" : "Availability of a dataset is the extent to which data (or some portion of it) is present, obtainable and ready for use."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -90,10 +90,10 @@
     "@id" : "http://www.w3.org/ns/dqv#Dimension"
   } ],
   "http://www.w3.org/ns/dqv#inCategory" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#Accessibility"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#Accessibility"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#Contextual",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#Contextual",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -107,7 +107,7 @@
     "@id" : "http://www.w3.org/ns/dqv#Category"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#D1",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#D1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -124,10 +124,10 @@
     "@id" : "http://www.w3.org/ns/dqv#Metric"
   } ],
   "http://www.w3.org/ns/dqv#inDimension" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#Interpretability"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#Interpretability"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#D2",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#D2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -144,10 +144,10 @@
     "@id" : "http://www.w3.org/ns/dqv#Metric"
   } ],
   "http://www.w3.org/ns/dqv#inDimension" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#Interpretability"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#Interpretability"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#D3",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#D3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -164,10 +164,10 @@
     "@id" : "http://www.w3.org/ns/dqv#Metric"
   } ],
   "http://www.w3.org/ns/dqv#inDimension" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#DataConsistency"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#DataConsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#D4",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#D4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -184,10 +184,10 @@
     "@id" : "http://www.w3.org/ns/dqv#Metric"
   } ],
   "http://www.w3.org/ns/dqv#inDimension" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#RepresentationalConciseness"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#RepresentationalConciseness"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#D5",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#D5",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -204,10 +204,10 @@
     "@id" : "http://www.w3.org/ns/dqv#Metric"
   } ],
   "http://www.w3.org/ns/dqv#inDimension" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#DataConsistency"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#DataConsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#D6",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#D6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -224,10 +224,10 @@
     "@id" : "http://www.w3.org/ns/dqv#Metric"
   } ],
   "http://www.w3.org/ns/dqv#inDimension" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#DataConsistency"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#DataConsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#D7",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#D7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -244,10 +244,10 @@
     "@id" : "http://www.w3.org/ns/dqv#Metric"
   } ],
   "http://www.w3.org/ns/dqv#inDimension" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#DataConsistency"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#DataConsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#DataConsistency",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#DataConsistency",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -261,10 +261,10 @@
     "@id" : "http://www.w3.org/ns/dqv#Dimension"
   } ],
   "http://www.w3.org/ns/dqv#inCategory" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#Intrinsic"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#Intrinsic"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#Interpretability",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#Interpretability",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -278,10 +278,10 @@
     "@id" : "http://www.w3.org/ns/dqv#Dimension"
   } ],
   "http://www.w3.org/ns/dqv#inCategory" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#Representational"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#Representational"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#Intrinsic",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#Intrinsic",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -295,7 +295,7 @@
     "@id" : "http://www.w3.org/ns/dqv#Category"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#Licensing",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#Licensing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -309,14 +309,14 @@
     "@id" : "http://www.w3.org/ns/dqv#Dimension"
   } ],
   "http://www.w3.org/ns/dqv#inCategory" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#Accessibility"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#Accessibility"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#MP1",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#MP1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Objects maps with literal values may refer to only one datatype and no language tags."
+    "@value" : "A logical table exist and references either a table (or view) or an SQL query"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/MQIO-metrics/#"
@@ -329,14 +329,74 @@
     "@id" : "http://www.w3.org/ns/dqv#Metric"
   } ],
   "http://www.w3.org/ns/dqv#inDimension" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#MappingConsistency"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#MappingConsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#MP2",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#MP10",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The term type for a Subject map must be an rr:IRI or an rr:BlankNode."
+    "@value" : "The datatype definition is a valid URI. In R2RML, this would involve validating object maps associated with datatypes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/MQIO-metrics/#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MP10"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/dqv#Metric"
+  } ],
+  "http://www.w3.org/ns/dqv#inDimension" : [ {
+    "@id" : "https://www.w3id.org/MQIO-metrics/#SyntacticValidity"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/MQIO-metrics/#MP11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Valid language tags are defined as per RFC 5646 (BCP 47)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/MQIO-metrics/#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MP11"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/dqv#Metric"
+  } ],
+  "http://www.w3.org/ns/dqv#inDimension" : [ {
+    "@id" : "https://www.w3id.org/MQIO-metrics/#SyntacticValidity"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/MQIO-metrics/#MP12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Mappings which generate the same triple more than once."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/MQIO-metrics/#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MP12"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/dqv#Metric"
+  } ],
+  "http://www.w3.org/ns/dqv#inDimension" : [ {
+    "@id" : "https://www.w3id.org/MQIO-metrics/#RepresentationalConciseness"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/MQIO-metrics/#MP2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "One subject map, which may have zero or more class definitions."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/MQIO-metrics/#"
@@ -349,14 +409,14 @@
     "@id" : "http://www.w3.org/ns/dqv#Metric"
   } ],
   "http://www.w3.org/ns/dqv#inDimension" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#MappingConsistency"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#MappingConsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#MP3",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#MP3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The term type for a Predicate map must an rr:IRI."
+    "@value" : "There must exist at least one predicate map and one object map. These are used to generate the predicates and objects of the triples."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/MQIO-metrics/#"
@@ -369,14 +429,14 @@
     "@id" : "http://www.w3.org/ns/dqv#Metric"
   } ],
   "http://www.w3.org/ns/dqv#inDimension" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#MappingConsistency"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#MappingConsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#MP4",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#MP4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The term type for an object map must be an rr:IRI, rr:Literal or a rr:BlankNode."
+    "@value" : "The triples map being referenced must exist in the mapping and, when defined, join conditions must have both parent and child column definition."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/MQIO-metrics/#"
@@ -389,14 +449,14 @@
     "@id" : "http://www.w3.org/ns/dqv#Metric"
   } ],
   "http://www.w3.org/ns/dqv#inDimension" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#MappingConsistency"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#MappingConsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#MP5",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#MP5",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Subject definitions must be valid URIs unless its type is defined as blank node."
+    "@value" : "Object maps with literal values may refer to only one language tag or one datatype definition (not both)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/MQIO-metrics/#"
@@ -409,14 +469,14 @@
     "@id" : "http://www.w3.org/ns/dqv#Metric"
   } ],
   "http://www.w3.org/ns/dqv#inDimension" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#MappingConsistency"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#MappingConsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#MP6",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#MP6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Valid language tags are defined as per RFC 5646 (BCP 47)."
+    "@value" : "Terms maps are assigned the correct term types. Subject maps may be IRIs or blank nodes, predicate maps must be IRIs, and object maps may be IRIs, blank nodes, or literal."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/MQIO-metrics/#"
@@ -429,14 +489,14 @@
     "@id" : "http://www.w3.org/ns/dqv#Metric"
   } ],
   "http://www.w3.org/ns/dqv#inDimension" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#MappingConsistency"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#MappingConsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#MP7",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#MP7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A join condition must have a child column."
+    "@value" : "Subject definitions must be valid URIs unless its type is defined as blank node."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/MQIO-metrics/#"
@@ -449,14 +509,14 @@
     "@id" : "http://www.w3.org/ns/dqv#Metric"
   } ],
   "http://www.w3.org/ns/dqv#inDimension" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#MappingConsistency"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#SyntacticValidity"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#MP8",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#MP8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A join condition must have a parent column."
+    "@value" : "The predicate definition is a valid URI."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/MQIO-metrics/#"
@@ -469,10 +529,30 @@
     "@id" : "http://www.w3.org/ns/dqv#Metric"
   } ],
   "http://www.w3.org/ns/dqv#inDimension" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#MappingConsistency"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#SyntacticValidity"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#MappingConsistency",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#MP9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The named graph definition is a valid URI."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/MQIO-metrics/#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MP9"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/dqv#Metric"
+  } ],
+  "http://www.w3.org/ns/dqv#inDimension" : [ {
+    "@id" : "https://www.w3id.org/MQIO-metrics/#SyntacticValidity"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/MQIO-metrics/#MappingConsistency",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -486,10 +566,10 @@
     "@id" : "http://www.w3.org/ns/dqv#Dimension"
   } ],
   "http://www.w3.org/ns/dqv#inCategory" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#Intrinsic"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#Intrinsic"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#Representational",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#Representational",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -503,7 +583,7 @@
     "@id" : "http://www.w3.org/ns/dqv#Category"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#RepresentationalConciseness",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#RepresentationalConciseness",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -517,10 +597,27 @@
     "@id" : "http://www.w3.org/ns/dqv#Dimension"
   } ],
   "http://www.w3.org/ns/dqv#inCategory" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#Representational"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#Representational"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#Trustworthiness",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#SyntacticValidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The conformance of an RDF graph with the RDF standard."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SyntacticValidity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/dqv#Dimension"
+  } ],
+  "http://www.w3.org/ns/dqv#inCategory" : [ {
+    "@id" : "https://www.w3id.org/MQIO-metrics/#Intrinsic"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/MQIO-metrics/#Trustworthiness",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -534,10 +631,10 @@
     "@id" : "http://www.w3.org/ns/dqv#Dimension"
   } ],
   "http://www.w3.org/ns/dqv#inCategory" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#Contextual"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#Contextual"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#Understandability",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#Understandability",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -551,10 +648,10 @@
     "@id" : "http://www.w3.org/ns/dqv#Dimension"
   } ],
   "http://www.w3.org/ns/dqv#inCategory" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#Contextual"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#Contextual"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#VOC1",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#VOC1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -571,14 +668,14 @@
     "@id" : "http://www.w3.org/ns/dqv#Metric"
   } ],
   "http://www.w3.org/ns/dqv#inDimension" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#Understandability"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#Understandability"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#VOC2",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#VOC2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Consumers need to understand where the data has originated."
+    "@value" : "A property should have a range and/or domain definition."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/MQIO-metrics/#"
@@ -591,14 +688,14 @@
     "@id" : "http://www.w3.org/ns/dqv#Metric"
   } ],
   "http://www.w3.org/ns/dqv#inDimension" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#Trustworthiness"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#Understandability"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#VOC3",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#VOC3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Allows the licensing information to be queried by machines."
+    "@value" : "Consumers need to understand where the data has originated."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/MQIO-metrics/#"
@@ -611,14 +708,14 @@
     "@id" : "http://www.w3.org/ns/dqv#Metric"
   } ],
   "http://www.w3.org/ns/dqv#inDimension" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#Licensing"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#Trustworthiness"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#VOC4",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#VOC4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Allows humans to read and understand license in a textual format."
+    "@value" : "Allows the licensing information to be queried by machines."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/MQIO-metrics/#"
@@ -631,14 +728,14 @@
     "@id" : "http://www.w3.org/ns/dqv#Metric"
   } ],
   "http://www.w3.org/ns/dqv#inDimension" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#Licensing"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#Licensing"
   } ]
 }, {
-  "@id" : "https://w3id.org/MQIO-metrics/#VOC5",
+  "@id" : "https://www.w3id.org/MQIO-metrics/#VOC5",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Ensuring the resources are retrievable is one of the main principles of Linked Data."
+    "@value" : "Allows humans to read and understand license in a textual format."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/MQIO-metrics/#"
@@ -651,6 +748,6 @@
     "@id" : "http://www.w3.org/ns/dqv#Metric"
   } ],
   "http://www.w3.org/ns/dqv#inDimension" : [ {
-    "@id" : "https://w3id.org/MQIO-metrics/#Availability"
+    "@id" : "https://www.w3id.org/MQIO-metrics/#Licensing"
   } ]
 } ]

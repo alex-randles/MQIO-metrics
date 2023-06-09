@@ -1,24 +1,24 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/MQIO-metrics/#"
-     xml:base="https://w3id.org/MQIO-metrics/"
+<rdf:RDF xmlns="https://www.w3id.org/MQIO-metrics/#"
+     xml:base="https://www.w3id.org/MQIO-metrics/"
      xmlns:dqv="http://www.w3.org/ns/dqv#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:bibo="http://purl.1122org/ontology/bibo/"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:bibo1="http://purl.org/ontology/bibo/"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https://w3id.org/MQIO-metrics/#">
-        <terms:abstract>The Mapping Quality Improvement Ontology (MQIO) metrics represent the mapping quality metrics associated with MQIO.</terms:abstract>
-        <terms:created>8 August 2021</terms:created>
-        <terms:license>http://creativecommons.org/publicdomain/zero/1.0/</terms:license>
+    <owl:Ontology rdf:about="https://www.w3id.org/MQIO-metrics/#">
+        <terms:abstract>The Mapping Quality Improvement Ontology (MQIO) metrics represent the mapping quality metrics associated with MQIO. This ontology is licensed under the Attribution (CC BY) License.</terms:abstract>
+        <terms:created>01 May 2023</terms:created>
+        <terms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
         <terms:title>Mapping Quality Improvement Ontology Metrics</terms:title>
-        <bibo1:status>Draft</bibo1:status>
-        <vann:preferredNamespacePrefix>mqio-metric</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>&lt;https://w3id.org/MQIO-metrics/#&gt;</vann:preferredNamespaceUri>
+        <bibo:status>Draft</bibo:status>
+        <vann:preferredNamespacePrefix>mqio-metric:</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://www.w3id.org/MQIO-metrics/#</vann:preferredNamespaceUri>
+        <owl:versionInfo>v1.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -32,13 +32,6 @@
      -->
 
 
-    
-
-
-    <!-- http://purl.1122org/ontology/bibo/status -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.1122org/ontology/bibo/status"/>
     
 
 
@@ -138,10 +131,10 @@
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#Accessibility -->
+    <!-- https://www.w3id.org/MQIO-metrics/#Accessibility -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#Accessibility">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#Accessibility">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Category"/>
         <rdfs:comment xml:lang="en">The accessibility category groups dimensions and metrics related to the access, authenticity and retrieval of data </rdfs:comment>
         <rdfs:label xml:lang="en">Accessibility</rdfs:label>
@@ -149,22 +142,22 @@
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#Availability -->
+    <!-- https://www.w3id.org/MQIO-metrics/#Availability -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#Availability">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#Availability">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
-        <rdfs:comment xml:lang="en">Availability of a dataset &lt;http://www.w3.org/ns/dqv#Metric&gt;is the extent to which data (or some portion of it) is present, obtainable and ready for use.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Availability of a dataset is the extent to which data (or some portion of it) is present, obtainable and ready for use.</rdfs:comment>
         <rdfs:label xml:lang="en">Availability</rdfs:label>
-        <dqv:inCategory rdf:resource="https://w3id.org/MQIO-metrics/#Accessibility"/>
+        <dqv:inCategory rdf:resource="https://www.w3id.org/MQIO-metrics/#Accessibility"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#Contextual -->
+    <!-- https://www.w3id.org/MQIO-metrics/#Contextual -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#Contextual">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#Contextual">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Category"/>
         <rdfs:comment xml:lang="en">The contextual category groups dimensions and  metrics  highly  depend on  the  context  of the task  at hand.</rdfs:comment>
         <rdfs:label xml:lang="en">Contextual</rdfs:label>
@@ -172,125 +165,125 @@
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#D1 -->
+    <!-- https://www.w3id.org/MQIO-metrics/#D1 -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#D1">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#D1">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
         <rdfs:comment xml:lang="en">Classes are considered undefined when it is not possible to dereference them against their namespace.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
         <rdfs:label xml:lang="en">D1</rdfs:label>
-        <dqv:inDimension rdf:resource="https://w3id.org/MQIO-metrics/#Interpretability"/>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#Interpretability"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#D2 -->
+    <!-- https://www.w3id.org/MQIO-metrics/#D2 -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#D2">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#D2">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
         <rdfs:comment xml:lang="en">Properties are considered undefined when it is not possible to dereference them against their namespace.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
         <rdfs:label xml:lang="en">D2</rdfs:label>
-        <dqv:inDimension rdf:resource="https://w3id.org/MQIO-metrics/#Interpretability"/>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#Interpretability"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#D3 -->
+    <!-- https://www.w3id.org/MQIO-metrics/#D3 -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#D3">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#D3">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
         <rdfs:comment xml:lang="en">The class type defined in the subject map does not  include the domain for this property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
         <rdfs:label xml:lang="en">D3</rdfs:label>
-        <dqv:inDimension rdf:resource="https://w3id.org/MQIO-metrics/#DataConsistency"/>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#DataConsistency"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#D4 -->
+    <!-- https://www.w3id.org/MQIO-metrics/#D4 -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#D4">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#D4">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
         <rdfs:comment xml:lang="en">The use of query parameters is not parameters in recommended by the W3C best practices for URIs.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
         <rdfs:label xml:lang="en">D4</rdfs:label>
-        <dqv:inDimension rdf:resource="https://w3id.org/MQIO-metrics/#RepresentationalConciseness"/>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#RepresentationalConciseness"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#D5 -->
+    <!-- https://www.w3id.org/MQIO-metrics/#D5 -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#D5">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#D5">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
         <rdfs:comment xml:lang="en">Individuals of one class cannot be simultaneously members of another class.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
         <rdfs:label xml:lang="en">D5</rdfs:label>
-        <dqv:inDimension rdf:resource="https://w3id.org/MQIO-metrics/#DataConsistency"/>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#DataConsistency"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#D6 -->
+    <!-- https://www.w3id.org/MQIO-metrics/#D6 -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#D6">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#D6">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
         <rdfs:comment xml:lang="en">The term type for this property does not match the range. If the range is a Literal, the term type should be a Literal, otherwise IRI.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
         <rdfs:label xml:lang="en">D6</rdfs:label>
-        <dqv:inDimension rdf:resource="https://w3id.org/MQIO-metrics/#DataConsistency"/>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#DataConsistency"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#D7 -->
+    <!-- https://www.w3id.org/MQIO-metrics/#D7 -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#D7">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#D7">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
         <rdfs:comment xml:lang="en">The datatype assigned to the object does not match the datatype range for this property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
         <rdfs:label xml:lang="en">D7</rdfs:label>
-        <dqv:inDimension rdf:resource="https://w3id.org/MQIO-metrics/#DataConsistency"/>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#DataConsistency"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#DataConsistency -->
+    <!-- https://www.w3id.org/MQIO-metrics/#DataConsistency -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#DataConsistency">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#DataConsistency">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment xml:lang="en">Data Consistency is the extent to which a dataset will be generated with no conflicting information.</rdfs:comment>
         <rdfs:label xml:lang="en">DataConsistency</rdfs:label>
-        <dqv:inCategory rdf:resource="https://w3id.org/MQIO-metrics/#Intrinsic"/>
+        <dqv:inCategory rdf:resource="https://www.w3id.org/MQIO-metrics/#Intrinsic"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#Interpretability -->
+    <!-- https://www.w3id.org/MQIO-metrics/#Interpretability -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#Interpretability">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#Interpretability">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment xml:lang="en">Interpretability is concerned to information being represented in an appropriate notation, and whether it is machine-processable.</rdfs:comment>
         <rdfs:label xml:lang="en">Interpretability</rdfs:label>
-        <dqv:inCategory rdf:resource="https://w3id.org/MQIO-metrics/#Representational"/>
+        <dqv:inCategory rdf:resource="https://www.w3id.org/MQIO-metrics/#Representational"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#Intrinsic -->
+    <!-- https://www.w3id.org/MQIO-metrics/#Intrinsic -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#Intrinsic">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#Intrinsic">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Category"/>
         <rdfs:comment xml:lang="en">Intrinsic category contains the dimensions that are independent of the user’s context.</rdfs:comment>
         <rdfs:label xml:lang="en">Intrinsic</rdfs:label>
@@ -298,138 +291,190 @@
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#Licensing -->
+    <!-- https://www.w3id.org/MQIO-metrics/#Licensing -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#Licensing">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#Licensing">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment xml:lang="en">Licensing refers to the license under which a mapping and its resulting dataset can be (re) used.</rdfs:comment>
         <rdfs:label xml:lang="en">Licensing</rdfs:label>
-        <dqv:inCategory rdf:resource="https://w3id.org/MQIO-metrics/#Accessibility"/>
+        <dqv:inCategory rdf:resource="https://www.w3id.org/MQIO-metrics/#Accessibility"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#MP1 -->
+    <!-- https://www.w3id.org/MQIO-metrics/#MP1 -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#MP1">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#MP1">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
-        <rdfs:comment xml:lang="en">Objects maps with literal values may refer to only one datatype and no language tags.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A logical table exist and references either a table (or view) or an SQL query</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
         <rdfs:label xml:lang="en">MP1</rdfs:label>
-        <dqv:inDimension rdf:resource="https://w3id.org/MQIO-metrics/#MappingConsistency"/>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#MappingConsistency"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#MP2 -->
+    <!-- https://www.w3id.org/MQIO-metrics/#MP10 -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#MP2">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#MP10">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
-        <rdfs:comment xml:lang="en">The term type for a Subject map must be an rr:IRI or an rr:BlankNode.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The datatype definition is a valid URI. In R2RML, this would involve validating object maps associated with datatypes</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
-        <rdfs:label xml:lang="en">MP2</rdfs:label>
-        <dqv:inDimension rdf:resource="https://w3id.org/MQIO-metrics/#MappingConsistency"/>
+        <rdfs:label xml:lang="en">MP10</rdfs:label>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#SyntacticValidity"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#MP3 -->
+    <!-- https://www.w3id.org/MQIO-metrics/#MP11 -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#MP3">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
-        <rdfs:comment xml:lang="en">The term type for a Predicate map must an rr:IRI.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
-        <rdfs:label xml:lang="en">MP3</rdfs:label>
-        <dqv:inDimension rdf:resource="https://w3id.org/MQIO-metrics/#MappingConsistency"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/MQIO-metrics/#MP4 -->
-
-
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#MP4">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
-        <rdfs:comment xml:lang="en">The term type for an object map must be an rr:IRI, rr:Literal or a rr:BlankNode.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
-        <rdfs:label xml:lang="en">MP4</rdfs:label>
-        <dqv:inDimension rdf:resource="https://w3id.org/MQIO-metrics/#MappingConsistency"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/MQIO-metrics/#MP5 -->
-
-
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#MP5">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
-        <rdfs:comment xml:lang="en">Subject definitions must be valid URIs unless its type is defined as blank node.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
-        <rdfs:label xml:lang="en">MP5</rdfs:label>
-        <dqv:inDimension rdf:resource="https://w3id.org/MQIO-metrics/#MappingConsistency"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/MQIO-metrics/#MP6 -->
-
-
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#MP6">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#MP11">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
         <rdfs:comment xml:lang="en">Valid language tags are defined as per RFC 5646 (BCP 47).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
-        <rdfs:label xml:lang="en">MP6</rdfs:label>
-        <dqv:inDimension rdf:resource="https://w3id.org/MQIO-metrics/#MappingConsistency"/>
+        <rdfs:label xml:lang="en">MP11</rdfs:label>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#SyntacticValidity"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#MP7 -->
+    <!-- https://www.w3id.org/MQIO-metrics/#MP12 -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#MP7">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#MP12">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
-        <rdfs:comment xml:lang="en">A join condition must have a child column.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Mappings which generate the same triple more than once.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
+        <rdfs:label xml:lang="en">MP12</rdfs:label>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#RepresentationalConciseness"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/MQIO-metrics/#MP2 -->
+
+
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#MP2">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:comment xml:lang="en">One subject map, which may have zero or more class definitions.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
+        <rdfs:label xml:lang="en">MP2</rdfs:label>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#MappingConsistency"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/MQIO-metrics/#MP3 -->
+
+
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#MP3">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:comment xml:lang="en">There must exist at least one predicate map and one object map. These are used to generate the predicates and objects of the triples.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
+        <rdfs:label xml:lang="en">MP3</rdfs:label>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#MappingConsistency"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/MQIO-metrics/#MP4 -->
+
+
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#MP4">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:comment xml:lang="en">The triples map being referenced must exist in the mapping and, when defined, join conditions must have both parent and child column definition.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
+        <rdfs:label xml:lang="en">MP4</rdfs:label>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#MappingConsistency"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/MQIO-metrics/#MP5 -->
+
+
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#MP5">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:comment xml:lang="en">Object maps with literal values may refer to only one language tag or one datatype definition (not both).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
+        <rdfs:label xml:lang="en">MP5</rdfs:label>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#MappingConsistency"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/MQIO-metrics/#MP6 -->
+
+
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#MP6">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:comment xml:lang="en">Terms maps are assigned the correct term types. Subject maps may be IRIs or blank nodes, predicate maps must be IRIs, and object maps may be IRIs, blank nodes, or literal.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
+        <rdfs:label xml:lang="en">MP6</rdfs:label>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#MappingConsistency"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/MQIO-metrics/#MP7 -->
+
+
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#MP7">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:comment xml:lang="en">Subject definitions must be valid URIs unless its type is defined as blank node.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
         <rdfs:label xml:lang="en">MP7</rdfs:label>
-        <dqv:inDimension rdf:resource="https://w3id.org/MQIO-metrics/#MappingConsistency"/>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#SyntacticValidity"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#MP8 -->
+    <!-- https://www.w3id.org/MQIO-metrics/#MP8 -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#MP8">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#MP8">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
-        <rdfs:comment xml:lang="en">A join condition must have a parent column.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The predicate definition is a valid URI.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
         <rdfs:label xml:lang="en">MP8</rdfs:label>
-        <dqv:inDimension rdf:resource="https://w3id.org/MQIO-metrics/#MappingConsistency"/>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#SyntacticValidity"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#MappingConsistency -->
+    <!-- https://www.w3id.org/MQIO-metrics/#MP9 -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#MappingConsistency">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#MP9">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:comment xml:lang="en">The named graph definition is a valid URI.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
+        <rdfs:label xml:lang="en">MP9</rdfs:label>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#SyntacticValidity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/MQIO-metrics/#MappingConsistency -->
+
+
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#MappingConsistency">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment xml:lang="en">Mapping Consistency is the extent to which a mapping is conformant to its mapping language.</rdfs:comment>
         <rdfs:label xml:lang="en">MappingConsistency</rdfs:label>
-        <dqv:inCategory rdf:resource="https://w3id.org/MQIO-metrics/#Intrinsic"/>
+        <dqv:inCategory rdf:resource="https://www.w3id.org/MQIO-metrics/#Intrinsic"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#Representational -->
+    <!-- https://www.w3id.org/MQIO-metrics/#Representational -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#Representational">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#Representational">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Category"/>
         <rdfs:comment xml:lang="en">Representational category is concerned  with the  design  of  the data.</rdfs:comment>
         <rdfs:label xml:lang="en">Representational</rdfs:label>
@@ -437,103 +482,115 @@
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#RepresentationalConciseness -->
+    <!-- https://www.w3id.org/MQIO-metrics/#RepresentationalConciseness -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#RepresentationalConciseness">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#RepresentationalConciseness">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment xml:lang="en">Representational conciseness refers to the representational of the resulting dataset being compact, well-formatted, and clear.</rdfs:comment>
         <rdfs:label xml:lang="en">RepresentationalConciseness</rdfs:label>
-        <dqv:inCategory rdf:resource="https://w3id.org/MQIO-metrics/#Representational"/>
+        <dqv:inCategory rdf:resource="https://www.w3id.org/MQIO-metrics/#Representational"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#Trustworthiness -->
+    <!-- https://www.w3id.org/MQIO-metrics/#SyntacticValidity -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#Trustworthiness">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#SyntacticValidity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <rdfs:comment xml:lang="en">The conformance of an RDF graph with the RDF standard.</rdfs:comment>
+        <rdfs:label xml:lang="en">SyntacticValidity</rdfs:label>
+        <dqv:inCategory rdf:resource="https://www.w3id.org/MQIO-metrics/#Intrinsic"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/MQIO-metrics/#Trustworthiness -->
+
+
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#Trustworthiness">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment xml:lang="en">Trustworthiness is the extent to which data producers involved in the mapping process believe that the information in those mappings is &apos;true&apos;.</rdfs:comment>
         <rdfs:label xml:lang="en">Trustworthiness</rdfs:label>
-        <dqv:inCategory rdf:resource="https://w3id.org/MQIO-metrics/#Contextual"/>
+        <dqv:inCategory rdf:resource="https://www.w3id.org/MQIO-metrics/#Contextual"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#Understandability -->
+    <!-- https://www.w3id.org/MQIO-metrics/#Understandability -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#Understandability">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#Understandability">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment xml:lang="en">Understandability is concerned with human-readable information being provided to mappings and the resources being generated such that data producers and consumers are able to understand them.</rdfs:comment>
         <rdfs:label xml:lang="en">Understandability</rdfs:label>
-        <dqv:inCategory rdf:resource="https://w3id.org/MQIO-metrics/#Contextual"/>
+        <dqv:inCategory rdf:resource="https://www.w3id.org/MQIO-metrics/#Contextual"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#VOC1 -->
+    <!-- https://www.w3id.org/MQIO-metrics/#VOC1 -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#VOC1">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#VOC1">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
         <rdfs:comment xml:lang="en">Humans consuming the information should be able to understand the Linked Data Resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
         <rdfs:label xml:lang="en">VOC1</rdfs:label>
-        <dqv:inDimension rdf:resource="https://w3id.org/MQIO-metrics/#Understandability"/>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#Understandability"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#VOC2 -->
+    <!-- https://www.w3id.org/MQIO-metrics/#VOC2 -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#VOC2">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#VOC2">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:comment xml:lang="en">A property should have a range and/or domain definition.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
+        <rdfs:label xml:lang="en">VOC2</rdfs:label>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#Understandability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/MQIO-metrics/#VOC3 -->
+
+
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#VOC3">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
         <rdfs:comment xml:lang="en">Consumers need to understand where the data has originated.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
-        <rdfs:label xml:lang="en">VOC2</rdfs:label>
-        <dqv:inDimension rdf:resource="https://w3id.org/MQIO-metrics/#Trustworthiness"/>
+        <rdfs:label xml:lang="en">VOC3</rdfs:label>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#Trustworthiness"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#VOC3 -->
+    <!-- https://www.w3id.org/MQIO-metrics/#VOC4 -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#VOC3">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#VOC4">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
         <rdfs:comment xml:lang="en">Allows the licensing information to be queried by machines.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
-        <rdfs:label xml:lang="en">VOC3</rdfs:label>
-        <dqv:inDimension rdf:resource="https://w3id.org/MQIO-metrics/#Licensing"/>
+        <rdfs:label xml:lang="en">VOC4</rdfs:label>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#Licensing"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/MQIO-metrics/#VOC4 -->
+    <!-- https://www.w3id.org/MQIO-metrics/#VOC5 -->
 
 
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#VOC4">
+    <owl:Class rdf:about="https://www.w3id.org/MQIO-metrics/#VOC5">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
         <rdfs:comment xml:lang="en">Allows humans to read and understand license in a textual format.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
-        <rdfs:label xml:lang="en">VOC4</rdfs:label>
-        <dqv:inDimension rdf:resource="https://w3id.org/MQIO-metrics/#Licensing"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/MQIO-metrics/#VOC5 -->
-
-
-    <owl:Class rdf:about="https://w3id.org/MQIO-metrics/#VOC5">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
-        <rdfs:comment xml:lang="en">Ensuring the resources are retrievable is one of the main principles of Linked Data.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/MQIO-metrics/#"/>
         <rdfs:label xml:lang="en">VOC5</rdfs:label>
-        <dqv:inDimension rdf:resource="https://w3id.org/MQIO-metrics/#Availability"/>
+        <dqv:inDimension rdf:resource="https://www.w3id.org/MQIO-metrics/#Licensing"/>
     </owl:Class>
 </rdf:RDF>
 
